@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the ramsey/uuid library
+ * This file is part of the ramsey/collection library
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -12,13 +12,13 @@
 
 declare(strict_types=1);
 
-namespace Ramsey\Uuid\Exception;
+namespace Ramsey\Collection\Exception;
 
 use InvalidArgumentException as PhpInvalidArgumentException;
 
 /**
- * Thrown to indicate that the argument received is not valid
+ * Thrown to indicate an argument is not of the expected type.
  */
-class InvalidArgumentException extends PhpInvalidArgumentException implements UuidExceptionInterface
+class InvalidArgumentException extends PhpInvalidArgumentException implements CollectionException
 {
 }
